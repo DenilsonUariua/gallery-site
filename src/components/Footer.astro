@@ -1,0 +1,79 @@
+---
+const { title, description } = Astro.props;
+---
+
+<footer id="footer" class="panel">
+  <div class="inner split">
+    <div>
+      <section>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </section>
+      <section>
+        <h2>Follow me on ...</h2>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://denilson-portfolio.vercel.app/"
+              class="icon brands fa-facebook-f"
+              aria-label="Social"
+              target="_blank"
+            >
+              <span class="label">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/DenilsonUariua"
+              class="icon brands fa-github"
+              aria-label="Social"
+              target="_blank"
+            >
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/denilson-uariua-20531b177/"
+              class="icon brands fa-linkedin-in"
+              aria-label="Social"
+              target="_blank"
+            >
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="copyright">
+        Images: <a href="http://unsplash.com">Unsplash</a>
+      </p>
+    </div>
+    <div>
+      <section>
+        <h2>Get in touch</h2>
+        <form method="post" action="#">
+          <div class="fields">
+            <div class="field half">
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="field half">
+              <input type="text" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="field">
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Message"></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send" class="primary" /></li>
+            <li><input type="reset" value="Reset" /></li>
+          </ul>
+        </form>
+      </section>
+    </div>
+  </div>
+</footer>
